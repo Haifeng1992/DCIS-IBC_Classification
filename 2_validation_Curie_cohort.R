@@ -102,3 +102,4 @@ the_cutoff = 0.03
 label_result[label_result>the_cutoff] = 1
 label_result[label_result<=the_cutoff] = 0
 confusionMatrix(as.factor(as.character(label_result)), as.factor(as.character(y.test)))
+#
