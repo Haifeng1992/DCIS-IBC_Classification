@@ -107,7 +107,7 @@ for (i in 1:10) {
   for (j in 1:nrow(mse)) {
     mse[j,3] = (mse[j,1] - mse[j,2])^2
   }
-  mse_results[1,i] = mean(mse[j,3])
+  mse_results[1,i] = mean(mse[,3])
   
   roc = roc(response = y.test, predictor = result, quiet = TRUE, direction = "<")
   plot(roc)
